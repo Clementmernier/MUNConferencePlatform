@@ -1,0 +1,15 @@
+{
+    "name": "munsimulator/app",
+    "description": "Model United Nations Conference Simulation Platform",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "cboden/ratchet": "^0.4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "MUNSimulator\\": "src/",
+            "MUNSimulator\\WebSocket\\": "websocket/"
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.speakers-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.speaker-item {
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.speaker-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.speaker-item.bg-light {
+    background-color: rgba(25, 135, 84, 0.1) !important;
+}
+
+.speaker-info {
+    flex-grow: 1;
+}
+
+.speaker-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.timer-display {
+    font-family: 'Roboto Mono', monospace;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

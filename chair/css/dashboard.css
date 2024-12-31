@@ -1,0 +1,179 @@
+/* Dashboard Styles */
+:root {
+    --primary-color: #0d6efd;  /* Bootstrap primary blue */
+    --secondary-color: #3498db;
+    --success-color: #27ae60;
+    --danger-color: #e74c3c;
+    --light-bg: #f8f9fa;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--light-bg);
+}
+
+.container-fluid {
+    padding: 1rem;
+}
+
+/* Resolution Section */
+.resolution-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+}
+
+.resolution-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Speakers List */
+.speakers-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.speakers-list h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.speaker-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.speaker-item:last-child {
+    border-bottom: none;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.nav-link i {
+    margin-right: 0.5rem;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+/* Buttons and Actions */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: var(--border-radius);
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.modal-title {
+    color: white;
+}
+
+/* Current Amendment Section */
+.current-amendment-card {
+    border: none;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+.current-amendment-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.current-amendment-card .card-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.current-amendment-card .card-header h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.amendment-content {
+    background-color: var(--light-bg);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.amendment-content .badge {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+}
+
+/* Responsive design for amendment section */
+@media (max-width: 768px) {
+    .current-amendment-card {
+        margin-bottom: 1rem;
+    }
+    
+    .current-amendment-card .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 10px;
+    }
+    
+    .resolution-section,
+    .speakers-list {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,86 @@
+/* Variables */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #3498db;
+    --success-color: #27ae60;
+    --danger-color: #e74c3c;
+    --light-bg: #f8f9fa;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* General Layout */
+body {
+    min-height: 100vh;
+    background-color: var(--light-bg);
+}
+
+.container-fluid {
+    padding: 1rem;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+/* Amendment Section */
+.amendment-content {
+    background-color: var(--light-bg);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.amendment-content .badge {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+}
+
+/* Status Badges */
+.badge {
+    padding: 0.5em 1em;
+    border-radius: 20px;
+}
+
+.bg-warning {
+    color: #000;
+}
+
+/* Page Header */
+.page-header {
+    margin-bottom: 1.5rem;
+}
+
+.page-header h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0.5rem;
+    }
+    
+    .card {
+        margin-bottom: 0.5rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
